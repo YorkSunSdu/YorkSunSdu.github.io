@@ -65,7 +65,7 @@ tags: Markdown
 
 注：可能受Markdown文件拓展、博客网页格式等因素影响，高亮、上下标并不能正确显示，于是截图展示：
 
-![](images\payimg\高亮上下标.png)
+![](/images/payimg/高亮上下标.png)
 
 ## 列表
 
@@ -214,7 +214,7 @@ int main()
 
 说明：受网页前端格式的影响，博客中反映的效果与Markdown文件有区别，因此截图展示：
 
-![](images\payimg\code.png)
+![](/images/payimg/code.png)
 
 ## 注释
 
@@ -282,7 +282,7 @@ int main()
 
 此时你会发现，Markdown文件以css文件的形式展现。
 
-![](images\payimg\css.png)
+![](/images/payimg/css.png)
 
 那么如果你对前端和css十(yi)分(qiao)精(bu)通(tong)，你就可以通过修改这个css文件来改变Markdown文档格式了！
 
@@ -294,11 +294,11 @@ int main()
 
 此时你只需要点击上面的箭头图标，再在文档中点击对应的文字，就能看到css文件中对应的代码块被提示了：
 
-![](images\payimg\找到提示.png)
+![](/images/payimg/找到提示.png)
 
 然后点击前面的三角形，把折叠的代码展开，就能看到你输入的文字了，说明就找对了。
 
-![](images\payimg\修改style.png)
+![](/images/payimg/修改style.png)
 
 此时你就可以直接对这块对应的代码style进行修改了，比如修改为：
 
@@ -310,7 +310,7 @@ int main()
 
 效果：
 
-![](images\payimg\修改后的效果.png)
+![](/images/payimg/修改后的效果.png)
 
 这就非常amzing啊是不是！
 
