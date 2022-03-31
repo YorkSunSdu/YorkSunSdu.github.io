@@ -246,7 +246,7 @@ int main()
 
 依次输入叹号、中括号和小括号，或者使用快捷键：Ctrl+Shift +I。
 
-效果：![](images/posts/howToUseTypora/insertPicture.jpg)
+效果：![](/images/payimg/insertPicture.jpg)
 
 在中括号内输入图片描述，在后面输入图片路径，也可以直接在磁盘中选择图片文件。
 
