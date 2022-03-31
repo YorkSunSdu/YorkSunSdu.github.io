@@ -206,7 +206,7 @@ int main()
 
 在Typora内效果如图：
 
-![注释效果图](images\posts\howToUseTypora\注释效果.png)
+![注释效果图](/images/payimg/注释效果.png)
 
 ## 任务列表
 
