@@ -1,21 +1,57 @@
+---
+layout: compress
+# Default layout
+---
+
 <!DOCTYPE html>
 
-<html>
+{% include lang.html %}
 
-{% include head.html %}
+{% include assets-origin.html %}
 
-<body>
+{% capture prefer_mode %}
+  {% if site.theme_mode %}
+    data-mode="{{ site.theme_mode }}"
+  {% endif %}
+{% endcapture %}
 
-  {% include navbar.html %}
+<html lang="{{ site.lang }}"{{ prefer_mode }}>
 
-  {{ content }}
+  {% include head.html %}
 
-  {% include footer.html %}
+  <body data-spy="scroll" data-target="#toc" data-topbar-visible="true">
 
-  {% include scripts.html %}
+    {% include sidebar.html %}
 
-  {% include google-analytics.html %}
+    {% include topbar.html %}
 
-</body>
+    <div id="main-wrapper">
+      <div id="main">
+
+        {{ content }}
+
+        {% include footer.html %}
+
+      </div>
+
+      {% include search-results.html %}
+
+    </div> <!-- #main-wrapper -->
+
+    {% if page.mermaid %}
+      {% include mermaid.html %}
+    {% endif %}
+
+    <div id="mask"></div>
+
+    <a id="back-to-top" href="#" aria-label="back-to-top" class="btn btn-lg btn-box-shadow" role="button">
+      <i class="fas fa-angle-up"></i>
+    </a>
+
+    {% include search-loader.html %}
+
+    {% include js-selector.html %}
+
+  </body>
 
 </html>
