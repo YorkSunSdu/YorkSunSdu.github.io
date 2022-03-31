@@ -206,7 +206,7 @@ int main()
 
 在Typora内效果如图：
 
-![注释效果图](D:\Blog\images\posts\howToUseTypora\注释效果.png)
+![注释效果图](images\posts\howToUseTypora\注释效果.png)
 
 ## 任务列表
 
@@ -218,7 +218,13 @@ int main()
 
 效果：
 
+未选中：
+
 - [ ] 背一百个单词
+
+选中：
+
+- [x] 背一百个单词
 
 ## 插入超链接
 
@@ -240,7 +246,7 @@ int main()
 
 依次输入叹号、中括号和小括号，或者使用快捷键：Ctrl+Shift +I。
 
-效果：![插入图片效果](D:\Blog\images\posts\howToUseTypora\插入图片效果.png)
+效果：![插入图片效果](images\posts\howToUseTypora\插入图片效果.png)
 
 在中括号内输入图片描述，在后面输入图片路径，也可以直接在磁盘中选择图片文件。
 
