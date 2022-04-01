@@ -316,9 +316,10 @@ int main()
 
 <div style="color:green; font-family:fangsong;">孙彦文修八尺有余，而形貌昳丽。人送外号“诚实可靠小郎君，一尘不染美少年”。</div>
 
-
+  
 
 <div style="color: red; font-size:24px">商业转载请联系博主获得授权，非商业转载请注明出处！</div>
 
-分享结束，大家辛苦了。散会！
+注：样式修改方法由博主学习自博主的大学同学[void-echo](https://void-echo.com/)，在此对他的鼎力相助表示感谢。
 
+分享结束，大家辛苦了。散会！
