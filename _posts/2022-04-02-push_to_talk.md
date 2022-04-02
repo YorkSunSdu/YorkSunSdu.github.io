@@ -23,7 +23,11 @@ tags: 安卓开发
 
 ### 设计的初稿如下：
 
-![设计1](images/push_to_talk_imgs/设计1.png)
+![设计1](/images/push_to_talk_imgs/设计1.png)
+
+分割
+
+![](/[images](https://github.com/YorkSunSdu/YorkSunSdu.github.io/tree/master/images)/**push_to_talk_imgs**/设计1.png)
 
 用林老师的高情商话术说：非常朴实，一看就是自己做的。
 
@@ -38,7 +42,7 @@ tags: 安卓开发
 1. 找一张美观的、尺寸合适的背景图片，放在app\src\main\res\mipmap-hdpi路径下，命名为aaa.png；
 2. 在activity_main.xml文件前面layout下加上这一行android:background="@mipmap/aaa"，如下图：
 
-![](images/push_to_talk_imgs/插入图片.png)
+![](/images/push_to_talk_imgs/插入图片.png)
 
 
 
