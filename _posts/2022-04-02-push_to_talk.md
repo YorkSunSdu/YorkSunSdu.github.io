@@ -129,11 +129,12 @@ send内容为se：
 
 ## 说明与收获
 
-1. 为什么之前用doc，现在用Markdown写报告了？原因有两点：
+1. 为什么又不用手机，用这个难看还不好用的Genymotion虚拟机：前两天把我的安卓手机卖掉换成了iPhone……之后如果时间允许我会尝试学习iOS开发。
+2. 为什么之前用doc，现在用Markdown写报告了？原因有两点：
    1. 我最近设法并成功使用Github Pages搭建了[我的个人博客首页](https://yorksunsdu.github.io/)，所以使用Markdown写报告更方便将报告上传至我的博客。
    2. 之前有同学在课程群里问实验报告可不可以用Markdown写，老师回复："good"。我觉得大多数人都用doc写，那用Markdown写会显得与众不同。所以我也学习了使用Typora写Markdown，并花了一整个下午完成了我的第一篇博文：[如何用Typora编写Markdown文件](https://yorksunsdu.github.io/2022/04/howToUseTypora/)。
-2. 这次的project在压缩之前记住要在build里面clean project了。clean之后项目文件夹的大小只有2.5MB，打成zip包的大小只有550KB，效果十分显著。
-3. 用Markdown相比于用doc写报告并上传git，最大的麻烦就是Markdown只能用链接的方式显示图片。所以上传到git的项目包括：图片目录、Markdown报告、源码zip。无法实现老师要求的一次实验两个文件。
+3. 这次的project在压缩之前记住要在build里面clean project了。clean之后项目文件夹的大小只有2.5MB，打成zip包的大小只有550KB，效果十分显著。
+4. 用Markdown相比于用doc写报告并上传git，最大的麻烦就是Markdown只能用链接的方式显示图片。所以上传到git的项目包括：图片目录、Markdown报告、源码zip。无法实现老师要求的一次实验两个文件。
 
 ## 源码
 
