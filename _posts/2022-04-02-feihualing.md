@@ -31,7 +31,7 @@ tags: 安卓开发
 
 拖个按钮进来，现在是这样了：
 
-![](/images/feihualing_imgs/文本框和按钮.png)
+<img src="/images/feihualing_imgs/文本框和按钮.png" width="80%">
 
 ### 步骤2：加代码
 
@@ -83,33 +83,37 @@ public void onClick_go(View view) {
 
 1. 虚拟手机设置失败：在安装Android Studio虚拟手机的时候，有未能正确安装haxm报错，在论坛查阅了资料后，尝试在bios设置中开启相关选项、尝试在“启用或关闭Windows功能”中开启相关选项等……依然未能成功下载。尝试去intel官网下载该驱动，并没有找到。尝试去第三方下载，成功下载haxm之后，不能进行安装。这才发现自己的电脑是AMD处理器，不能下载intel的haxm驱动……然后在论坛寻找搭载AMD处理器的电脑如何安装Android Studio虚拟机，在尝试若干错误方法后，终于配置好了驱动，在Android Studio的虚拟机跑起来了helloworld。结果下一次开机再打开，又跑不起来了……看了无数方法仍然失败后，决定放弃Android Studio自带的虚拟机，下载了genymotion。安装打开genymotion后，提示需要下载Oracle VM virtualbox。下载了Oracle VM virtualbox后，注册了genymotion账号并登录，添加了虚拟机，终于能跑起来helloworld了。以上为星期五晚上完成，星期天晚上再跑项目的时候，发现虚拟机又跑不起来了，卡在下面这个界面……
 
-   ![](/images/feihualing_imgs/虚拟机卡住.png)
+   <img src="/images/feihualing_imgs/虚拟机卡住.png" width="80%">
 
-   寻找了一晚上方法后无果。星期一早上找到了方法，那就是在新建虚拟机的时候，应该把下面的NAT(default)改为Bridge。虽然每次用这种方法打开虚拟机都需要十秒以上时间，但是毕竟成功跑起来了。![](/images/feihualing_imgs/解决1.png)
+   寻找了一晚上方法后无果。星期一早上找到了方法，那就是在新建虚拟机的时候，应该把下面的NAT(default)改为Bridge。虽然每次用这种方法打开虚拟机都需要十秒以上时间，但是毕竟成功跑起来了。
+
+   <img src="/images/feihualing_imgs/解决1.png" width="80%">
 
    星期一晚上准备编写飞花令，根据实验报告中的步骤配置好了代码之后，运行了飞花令，结果发现虚拟机不能使用中文输入……把系统语言改为中文也不行，虚拟机根本没有中文输入法……
 
-   <img src="/images/feihualing_imgs/输入法1.png" width="40%"><img src="/images/feihualing_imgs/输入法2.png" width="40%">
+   <img src="/images/feihualing_imgs/输入法1.png" width="30%"><img src="/images/feihualing_imgs/输入法2.png" width="30%">
 
    我一开始以为是moto虚拟机的问题，又下了一个华为的虚拟机，结果华为手机也没有中文输入法……最后只能用自己的手机了。 星期五搞了半天也没弄明白怎么用Android Studio连接自己的手机，结果星期一找到的第一个帖子的方法就成功了，手机截图如下：
 
-   <img src="/images/feihualing_imgs/成功1.png" width="40%">
+   <img src="/images/feihualing_imgs/成功1.png" width="30%">
 
    到此，飞花令运行环境的问题才成功解决。
 
 2. 唐诗文件乱码：在网上下载了诗三百txt，发现在电脑上记事本正确显示，在手机上全是乱码不能查找。查找资料后，首先在Android Studio的设置中修改了编码：
 
-   <img src="/images/feihualing_imgs/修改编码1.png" width="">
+   <img src="/images/feihualing_imgs/修改编码1.png" width="80%">
 
    跟我想象的一样，并没有成功……然后下载了notepad++，用notepad++打开这个txt文件，在下面设置encoding为UTF-8，然后保存：
 
-   <img src="/images/feihualing_imgs/修改编码2.png" width="">
+   <img src="/images/feihualing_imgs/修改编码2.png" width="80%">
 
    没用，还是乱码。最后用Android Studio打开了这个txt文件，提示是否转换为UTF-8编码，然后转换，终于可以成功显示和搜索了：
 
-   <img src="/images/feihualing_imgs/修改编码3.png" width="40%">
+   <img src="/images/feihualing_imgs/修改编码3.png" width="30%">
 
-3. 添加背景：被折磨的筋疲力竭之后，不想再折腾复杂的东西了，觉得添加宋词元曲四大名著没什么技术含量。尝试搜索把搜索的关键字标红的方法，发现太麻烦。于是决定给应用添加一个背景。在网上找了张淡雅的手机壁纸图，找了添加背景的教程，很顺利地成功了，效果还不错，见下效果图。<img src="/images/feihualing_imgs/效果图1.png" width="40%"><img src="/images/feihualing_imgs/效果图2.png" width="40%">
+3. 添加背景：被折磨的筋疲力竭之后，不想再折腾复杂的东西了，觉得添加宋词元曲四大名著没什么技术含量。尝试搜索把搜索的关键字标红的方法，发现太麻烦。于是决定给应用添加一个背景。在网上找了张淡雅的手机壁纸图，找了添加背景的教程，很顺利地成功了，效果还不错，见下效果图。
+
+   <img src="/images/feihualing_imgs/效果图1.png" width="30%"><img src="/images/feihualing_imgs/效果图2.png" width="30%">
 
 
 ## 源码
