@@ -25,10 +25,6 @@ tags: 安卓开发
 
 ![设计1](/images/push_to_talk_imgs/设计1.png)
 
-分割
-
-![](/[images](https://github.com/YorkSunSdu/YorkSunSdu.github.io/tree/master/images)/**push_to_talk_imgs**/设计1.png)
-
 用林老师的高情商话术说：非常朴实，一看就是自己做的。
 
 实际上代码借鉴了git中其他同学。设计还是自己做的。
@@ -48,7 +44,7 @@ tags: 安卓开发
 
 插入图片后的效果如下图：
 
-![](/push_to_talk_imgs/设计2.png)
+![](/images/push_to_talk_imgs/设计2.png)
 
 好多了，我很满意了。
 
@@ -115,19 +111,19 @@ send是完全没有问题的：
 
 send内容为send：
 
-![](/push_to_talk_imgs/send1.png)
+![](/images/push_to_talk_imgs/send1.png)
 
 结果：
 
-![](/push_to_talk_imgs/send结果1.png)
+![](/images/push_to_talk_imgs/send结果1.png)
 
 send内容为se：
 
-![](/push_to_talk_imgs/send2.png)
+![](/images/push_to_talk_imgs/send2.png)
 
 结果：
 
-![](/push_to_talk_imgs/send结果2.png)
+![](/images/push_to_talk_imgs/send结果2.png)
 
 可惜，接收是有问题的。不太能接收到。
 
@@ -138,4 +134,12 @@ send内容为se：
    2. 之前有同学在课程群里问实验报告可不可以用Markdown写，老师回复："good"。我觉得大多数人都用doc写，那用Markdown写会显得与众不同。所以我也学习了使用Typora写Markdown，并花了一整个下午完成了我的第一篇博文：[如何用Typora编写Markdown文件](https://yorksunsdu.github.io/2022/04/howToUseTypora/)。
 2. 这次的project在压缩之前记住要在build里面clean project了。clean之后项目文件夹的大小只有2.5MB，打成zip包的大小只有550KB，效果十分显著。
 3. 用Markdown相比于用doc写报告并上传git，最大的麻烦就是Markdown只能用链接的方式显示图片。所以上传到git的项目包括：图片目录、Markdown报告、源码zip。无法实现老师要求的一次实验两个文件。
+
+## 源码
+
+[push_to_talk源码链接](https://github.com/YorkSunSdu/YorkSunSdu/tree/master/AndroidDevelopment/push_to_talk)
+
+<div style="color: red; font-size:24px">商业转载请联系博主获得授权，非商业转载请注明出处！</div>
+
+分享结束，大家辛苦了。散会！
 
