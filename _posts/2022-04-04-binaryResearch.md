@@ -1,11 +1,11 @@
 ---
 layout: post
 title: 二分查找
-date: 2022-04-02
+date: 2022-04-04
 tags: 算法
 ---
 
-34 69 367
+
 
 ## [35. 搜索插入位置](https://leetcode-cn.com/problems/search-insert-position/)
 
@@ -167,6 +167,61 @@ nums 是一个非递减数组
 
 ### 解法
 
+将查找左边界和查找右边界分开，使代码更清晰。
+
+```c++
+class Solution {
+public:
+    vector<int> searchRange(vector<int>& nums, int target) {
+        int leftBorder = getLeftBorder(nums, target);
+        int rightBorder = getRightBorder(nums, target);
+        // 情况一 target在数组的左边或右边
+        if (leftBorder == -2 || rightBorder == -2) return {-1, -1};
+        // 情况三 target在数组中
+        if (rightBorder - leftBorder > 1) return {leftBorder + 1, rightBorder - 1};
+        // 情况二 target在数组范围中但不存在
+        return {-1, -1};
+    }
+private:
+     int getRightBorder(vector<int>& nums, int target) {
+        int left = 0;
+        int right = nums.size() - 1;
+        int rightBorder = -2; // 记录一下rightBorder没有被赋值的情况
+        while (left <= right) {
+            int middle = left + ((right - left) / 2);
+            if (nums[middle] > target) {
+                right = middle - 1;
+            } else { // 寻找右边界，nums[middle] == target的时候更新left
+                left = middle + 1;
+                rightBorder = left;
+            }
+        }
+        return rightBorder;
+    }
+    int getLeftBorder(vector<int>& nums, int target) {
+        int left = 0;
+        int right = nums.size() - 1;
+        int leftBorder = -2; // 记录一下leftBorder没有被赋值的情况
+        while (left <= right) {
+            int middle = left + ((right - left) / 2);
+            if (nums[middle] >= target) { // 寻找左边界，nums[middle] == target的时候更新right
+                right = middle - 1;
+                leftBorder = right;
+            } else {
+                left = middle + 1;
+            }
+        }
+        return leftBorder;
+    }
+};
+```
+
+时间复杂度：O(log n)
+
+空间复杂度：O(1)
+
+此方法来自[代码随想录](https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/solution/dai-ma-sui-xiang-lu-34po-shi-wu-hua-de-e-6t89/)。
+
 
 
 ## [69. x 的平方根 ](https://leetcode-cn.com/problems/sqrtx/)
@@ -191,6 +246,87 @@ nums 是一个非递减数组
 
 提示：
 0 <= x <= 2^31 - 1
+
+### 解法
+
+```c++
+class Solution {
+public:
+    int mySqrt(int x) {
+        int l = 0, r = x, ans = -1;
+        while (l <= r) {
+            int mid = l + (r - l) / 2;
+            if ((long long)mid * mid <= x) { 
+                // int和long表示范围约为正负20亿(正负10^10)
+                // long long表示范围约为正负900亿亿(正负10^19)
+                ans = mid;
+                l = mid + 1;
+            } else {
+                r = mid - 1;
+            }
+        }
+        return ans;
+    }
+};
+```
+
+时间复杂度：O(log x)
+
+空间复杂度：O(1)
+
+### 另附解法
+
+#### 袖珍计算器算法
+
+「袖珍计算器算法」是一种用指数函数exp 和对数函数ln 代替平方根函数的方法。
+
+√x = x ^ 1/2 = (e ^ ln x) ^ 1/2 = e ^ (1/2 * ln x)
+
+由于计算机无法存储浮点数的精确值，而指数函数和对数函数的参数和返回值均为浮点数，因此运算过程中会存在误差。例如当 x = 2147395600时，e ^ (1/2 * ln x)的计算结果与正确值 4634046340 相差 10^(-11)，这样在对结果取整数部分时，会得到 4633946339 这个错误的结果。因此在得到结果的整数部分ans 后，我们应当找出ans 与ans+1 中哪一个是真正的答案。
+
+```c++
+class Solution {
+public:
+    int mySqrt(int x) {
+        if (x == 0) {
+            return 0;
+        }
+        int ans = exp(0.5 * log(x));
+        return ((long long)(ans + 1) * (ans + 1) <= x ? ans + 1 : ans);
+    }
+};
+```
+
+时间复杂度：O(1)，由于内置的log和exp函数一般都很快
+
+空间复杂度：O(1)
+
+注：这个leetcode官方的解法有争议，因为题目中说：“不允许使用任何内置指数函数和算符”，而解法中出现了exp函数。
+
+#### 牛顿迭代
+
+[牛顿迭代](https://leetcode-cn.com/problems/sqrtx/solution/niu-dun-die-dai-fa-by-loafer/)
+
+看累了，先把链接放这儿。
+
+## [367. 有效的完全平方数](https://leetcode-cn.com/problems/valid-perfect-square/)
+
+### 题目
+
+给定一个 正整数 num ，编写一个函数，如果 num 是一个完全平方数，则返回 true ，否则返回 false 。
+
+进阶：不要 使用任何内置的库函数，如  sqrt 。
+
+>示例 1：
+输入：num = 16
+输出：true
+
+>示例 2：
+输入：num = 14
+输出：false
+
+提示：
+1 <= num <= 2^31 - 1
 
 ### 解法
 
