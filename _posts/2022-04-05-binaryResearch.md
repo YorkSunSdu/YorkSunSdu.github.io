@@ -1,11 +1,13 @@
 ---
 layout: post
 title: 二分查找
-date: 2022-04-04
+date: 2022-04-05
 tags: 算法
 ---
 
+博主对leetcode中可以使用**二分查找**解题的题目作了总结。
 
+题目来源[leetcode](https://leetcode-cn.com/)，点击题目即可直达leetcode对应题目。
 
 ## [35. 搜索插入位置](https://leetcode-cn.com/problems/search-insert-position/)
 
@@ -301,13 +303,42 @@ public:
 
 空间复杂度：O(1)
 
-注：这个leetcode官方的解法有争议，因为题目中说：“不允许使用任何内置指数函数和算符”，而解法中出现了exp函数。
+**注**：这个leetcode官方的解法有争议，因为题目中说：“**不允许使用任何内置指数函数和算符**”，而解法中出现了exp函数。
 
 #### 牛顿迭代
 
-[牛顿迭代](https://leetcode-cn.com/problems/sqrtx/solution/niu-dun-die-dai-fa-by-loafer/)
+**原理**：用(x, f(x))处的切线来逼近方程x^2 - a = 0的根。f(x) = x^2 - a的导数为2x。即(x, f(x))处切线的斜率为2x，由下图：
 
-看累了，先把链接放这儿。
+<img src="/images/binarySearch_imgs/牛顿迭代.png" style="zoom:50%;" />
+
+可知x - f(x) / 2x是一个比x更接近的近似值。将f(x) = x^2 - a带入该式，可得近似值为x- (x^2 - a) / 2x，化简得近似值为(x + a / x) / 2。观察此式，近似值为x与a/x的平均数。
+
+```c++
+class Solution {
+public:
+    int mySqrt(int x) {
+        if (x == 0) {
+            return 0;
+        }
+
+        double a = x, x0 = x;
+        while (true) {
+            double xi = 0.5 * (x0 + a / x0);
+            if (fabs(x0 - xi) < 1e-7) { // 误差 < 10^(-7)
+                break;
+            }
+            x0 = xi;
+        }
+        return int(x0);
+    }
+};
+```
+
+时间复杂度：O(log x)，比二分法更快
+
+空间复杂度：O(1)
+
+此方法来自[牛顿迭代](https://leetcode-cn.com/problems/sqrtx/solution/niu-dun-die-dai-fa-by-loafer/)。
 
 ## [367. 有效的完全平方数](https://leetcode-cn.com/problems/valid-perfect-square/)
 
@@ -329,4 +360,64 @@ public:
 1 <= num <= 2^31 - 1
 
 ### 解法
+
+```c++
+class Solution {
+public:
+    bool isPerfectSquare(int num) {
+        long long target = num;
+        long long left = 0, right = num, mid;
+        while(left <= right)
+        {
+            mid = left + (right - left) / 2;
+            if(mid * mid == target) // mid即为√num
+                return true;
+            else if(mid * mid < target)
+                left = mid + 1;
+            else if(mid * mid > target)
+                right = mid - 1;
+        }
+        return false;
+    }
+};
+```
+
+时间复杂度：O(log num)
+
+空间复杂度：O(1)
+
+### 另附解法
+
+#### 牛顿迭代
+
+```c++
+class Solution {
+public:
+    bool isPerfectSquare(int num) {
+        double x0 = num;
+        while (true) {
+            double x1 = (x0 + num / x0) / 2;
+            if (x0 - x1 < 1e-6) {
+                break;
+            }
+            x0 = x1;
+        }
+        int x = (int) x0;
+        return x * x == num;
+    }
+};
+```
+
+时间复杂度：O(log num)
+
+空间复杂度：O(1)
+
+## 总结
+
++ 对n个有序数使用二分法查找的时间复杂度为log n
++ while循环中的条件判断时，一定要注意：left = mid **+** 1; right = mid **-** 1，不要把加减号弄错了，否则while会无限循环。
+
+<div style="color: red; font-size:24px">商业转载请联系博主获得授权，非商业转载请注明出处！</div>
+
+分享结束，大家辛苦了。散会！
 
