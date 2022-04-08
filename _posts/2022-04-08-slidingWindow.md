@@ -31,8 +31,8 @@ tags: 算法
 > 解释: 因为无重复字符的最长子串是 "wke"，所以其长度为 3。<br />
 >      请注意，你的答案必须是 子串 的长度，"pwke" 是一个子序列，不是子串。
 
-提示：
-0 <= s.length <= 5 * 10^4
+提示：<br />
+0 <= s.length <= 5 * 10^4<br />
 s 由英文字母、数字、符号和空格组成
 
 ### 解法
@@ -98,9 +98,9 @@ public:
 > 输入：target = 11, nums = [1,1,1,1,1,1,1,1]<br />
 > 输出：0
 
-提示：
-1 <= target <= 10^9
-1 <= nums.length <= 10^5
+提示：<br />
+1 <= target <= 10^9<br />
+1 <= nums.length <= 10^5<br />
 1 <= nums[i] <= 10^5
 
 
@@ -167,9 +167,9 @@ public:
 > 输入：nums = [1], k = 1<br />
 > 输出：[1]
 
-提示：
-1 <= nums.length <= 10^5
--10^4 <= nums[i] <= 10^4
+提示：<br />
+1 <= nums.length <= 10^5<br />
+-10^4 <= nums[i] <= 10^4<br />
 1 <= k <= nums.length
 
 ### 解法一
@@ -277,8 +277,8 @@ public:
 > 输入：s1= "ab" s2 = "eidboaoo"<br />
 > 输出：false
 
-提示：
-1 <= s1.length, s2.length <= 104
+提示：<br />
+1 <= s1.length, s2.length <= 104<br />
 s1 和 s2 仅包含小写字母
 
 
@@ -433,8 +433,8 @@ public:
 > 输出：5<br />
 > 解释：可以采摘 [1,2,1,1,2] 这五棵树。
 
-提示：
-1 <= fruits.length <= 10^5
+提示：<br />
+1 <= fruits.length <= 10^5<br />
 0 <= fruits[i] < fruits.length
 
 
