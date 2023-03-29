@@ -7,11 +7,13 @@ tags: 算法
 
 博主对leetcode中可以使用**滑动窗口**解题的有关数组的题目作了总结。
 
-题目来源[leetcode](https://leetcode-cn.com/)，点击题目即可直达leetcode对应题目。
+题目来源[leetcode](https://leetcode-cn.com/)，点击题目链接即可直达leetcode对应题目。
 
-## [3. 无重复字符的最长子串](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/)
+## 3. 无重复字符的最长子串
 
 ### 题目
+
+题目链接：[3. 无重复字符的最长子串](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/)
 
 给定一个字符串 s ，请你找出其中不含有重复字符的 **最长子串** 的长度。
 
@@ -74,9 +76,11 @@ public:
 
 
 
-## [209. 长度最小的子数组](https://leetcode-cn.com/problems/minimum-size-subarray-sum/)
+## 209. 长度最小的子数组
 
 ### 题目
+
+题目链接：[209. 长度最小的子数组](https://leetcode-cn.com/problems/minimum-size-subarray-sum/)
 
 给定一个含有 n 个正整数的数组和一个正整数 target 。
 
@@ -141,9 +145,13 @@ public:
 
 
 
-## [239. 滑动窗口最大值](https://leetcode-cn.com/problems/sliding-window-maximum/)
+## 239. 滑动窗口最大值
 
 ### 题目
+
+题目链接：
+
+[239. 滑动窗口最大值](https://leetcode-cn.com/problems/sliding-window-maximum/)
 
 给你一个整数数组 nums，有一个大小为 k 的滑动窗口从数组的最左侧移动到数组的最右侧。你只可以看到在滑动窗口内的 k 个数字。滑动窗口每次只向右移动一位。
 
@@ -254,15 +262,19 @@ public:
 
 
 
-## [438. 找到字符串中所有字母异位词](https://leetcode-cn.com/problems/find-all-anagrams-in-a-string/)
+## 438. 找到字符串中所有字母异位词
+
+题目链接：[438. 找到字符串中所有字母异位词](https://leetcode-cn.com/problems/find-all-anagrams-in-a-string/)
 
 跟[567. 字符串的排列](https://leetcode-cn.com/problems/permutation-in-string/)几乎一样，略。
 
 
 
-## [567. 字符串的排列](https://leetcode-cn.com/problems/permutation-in-string/)
+## 567. 字符串的排列
 
 ### 题目
+
+题目链接：[567. 字符串的排列](https://leetcode-cn.com/problems/permutation-in-string/)
 
 给你两个字符串 s1 和 s2 ，写一个函数来判断 s2 是否包含 s1 的排列。如果是，返回 true ；否则，返回 false 。
 
@@ -395,9 +407,11 @@ public:
 
 
 
-## [904. 水果成篮](https://leetcode-cn.com/problems/fruit-into-baskets/)
+## 904. 水果成篮
 
 ### 题目
+
+题目链接：[904. 水果成篮](https://leetcode-cn.com/problems/fruit-into-baskets/)
 
 你正在探访一家农场，农场从左到右种植了一排果树。这些树用一个整数数组 fruits 表示，其中 fruits[i] 是第 i 棵树上的水果 **种类** 。
 

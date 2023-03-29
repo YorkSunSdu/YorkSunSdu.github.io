@@ -7,11 +7,13 @@ tags: 算法
 
 博主对leetcode中的有关**哈希表**的题目作了总结。
 
-题目来源[leetcode](https://leetcode-cn.com/)，点击题目即可直达leetcode对应题目。
+题目来源[leetcode](https://leetcode-cn.com/)，点击题目链接即可直达leetcode对应题目。
 
-## [242. 有效的字母异位词](https://leetcode-cn.com/problems/valid-anagram/)
+## 242. 有效的字母异位词
 
 ### 题目
+
+题目链接：[242. 有效的字母异位词](https://leetcode-cn.com/problems/valid-anagram/)
 
 给定两个字符串 s 和 t ，编写一个函数来判断 t 是否是 s 的字母异位词。
 
@@ -65,9 +67,11 @@ public:
 
 
 
-## [349. 两个数组的交集](https://leetcode-cn.com/problems/intersection-of-two-arrays/)
+## 349. 两个数组的交集
 
 ### 题目
+
+题目链接：[349. 两个数组的交集](https://leetcode-cn.com/problems/intersection-of-two-arrays/)
 
 给定两个数组 nums1 和 nums2 ，返回 它们的交集 。输出结果中的每个元素一定是 **唯一** 的。我们可以 **不考虑输出结果的顺序** 。
 
@@ -114,9 +118,11 @@ public:
 
 
 
-## [202. 快乐数](https://leetcode-cn.com/problems/happy-number/)
+## 202. 快乐数
 
 ### 题目
+
+题目链接：[202. 快乐数](https://leetcode-cn.com/problems/happy-number/)
 
 编写一个算法来判断一个数 n 是不是快乐数。
 

@@ -7,13 +7,15 @@ tags: 算法
 
 博主对leetcode中可以使用**双指针**解题的有关数组的题目作了总结。
 
-题目来源[leetcode](https://leetcode-cn.com/)，点击题目即可直达leetcode对应题目。
+题目来源[leetcode](https://leetcode-cn.com/)，点击题目链接即可直达leetcode对应题目。
 
 
 
-## [27.移除元素](https://leetcode-cn.com/problems/remove-element/)
+## 27.移除元素
 
 ### 题目
+
+题目链接：[27.移除元素](https://leetcode-cn.com/problems/remove-element/)
 
 给你一个数组 nums 和一个值 val，你需要**原地**移除所有数值等于 val 的元素，并返回移除后数组的新长度。
 
@@ -113,9 +115,11 @@ public:
 
 
 
-## [26. 删除有序数组中的重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/)
+## 26. 删除有序数组中的重复项
 
 ### 题目
+
+题目链接：[26. 删除有序数组中的重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/)
 
 给你一个 **升序排列** 的数组 nums ，请你 **原地** 删除重复出现的元素，使每个元素 **只出现一次** ，返回删除后数组的新长度。元素的 **相对顺序** 应该保持 **一致** 。
 
@@ -185,9 +189,11 @@ public:
 
 空间复杂度：O(1)
 
-## [167. 两数之和 II - 输入有序数组](https://leetcode-cn.com/problems/two-sum-ii-input-array-is-sorted/)
+## 167. 两数之和 II - 输入有序数组
 
 ### 题目
+
+题目链接：[167. 两数之和 II - 输入有序数组](https://leetcode-cn.com/problems/two-sum-ii-input-array-is-sorted/)
 
 给你一个下标从 **1** 开始的整数数组 numbers ，该数组已按 **非递减顺序排列**  ，请你从数组中找出满足相加之和等于目标数 target 的两个数。如果设这两个数分别是 numbers[index1] 和 numbers[index2] ，则 1 <= index1 < index2 <= numbers.length 。
 
@@ -259,9 +265,11 @@ public:
 
 
 
-## [283. 移动零](https://leetcode-cn.com/problems/move-zeroes/)
+## 283. 移动零
 
 ### 题目
+
+题目链接：[283. 移动零](https://leetcode-cn.com/problems/move-zeroes/)
 
 给定一个数组 nums，编写一个函数将所有 0 移动到数组的末尾，同时保持非零元素的相对顺序。
 
@@ -319,6 +327,8 @@ public:
 
 ### 题目
 
+题目链接：[557. 反转字符串中的单词 III](https://leetcode-cn.com/problems/reverse-words-in-a-string-iii/)
+
 给定一个字符串 s ，你需要反转字符串中每个单词的字符顺序，同时仍保留空格和单词的初始顺序。
 
 示例 1：
@@ -371,9 +381,11 @@ public:
 
 
 
-## [844. 比较含退格的字符串](https://leetcode-cn.com/problems/backspace-string-compare/)
+## 844. 比较含退格的字符串
 
 ### 题目
+
+题目链接：[844. 比较含退格的字符串](https://leetcode-cn.com/problems/backspace-string-compare/)
 
 给定 s 和 t 两个字符串，当它们分别被输入到空白的文本编辑器后，如果两者相等，返回 true 。# 代表退格字符。
 
@@ -504,9 +516,11 @@ public:
 
 
 
-## [977. 有序数组的平方](https://leetcode-cn.com/problems/squares-of-a-sorted-array/)
+## 977. 有序数组的平方
 
 ### 题目
+
+题目链接：[977. 有序数组的平方](https://leetcode-cn.com/problems/squares-of-a-sorted-array/)
 
 给你一个按 非递减顺序 排序的整数数组 nums，返回 每个数字的平方 组成的新数组，要求也按 非递减顺序 排序。
 

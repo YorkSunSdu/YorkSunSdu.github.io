@@ -9,9 +9,11 @@ tags: 算法
 
 题目来源[leetcode](https://leetcode-cn.com/)，点击题目即可直达leetcode对应题目。
 
-## [35. 搜索插入位置](https://leetcode-cn.com/problems/search-insert-position/)
+## 35. 搜索插入位置
 
 ### 题目
+
+题目链接：[35. 搜索插入位置](https://leetcode-cn.com/problems/search-insert-position/)
 
 给定一个排序数组和一个目标值，在数组中找到目标值，并返回其索引。如果目标值不存在于数组中，返回它将会被按顺序插入的位置。
 
@@ -82,9 +84,11 @@ public:
 
 空间复杂度：O(1)
 
-## [704. 二分查找](https://leetcode-cn.com/problems/binary-search/)
+## 704. 二分查找
 
 ### 题目
+
+题目链接：[704. 二分查找](https://leetcode-cn.com/problems/binary-search/)
 
 给定一个 n 个元素有序的（升序）整型数组 nums 和一个目标值 target  ，写一个函数搜索 nums 中的 target，如果目标值存在返回下标，否则返回 -1。
 
@@ -137,9 +141,11 @@ public:
 
 空间复杂度：O(1)
 
-## [34. 在排序数组中查找元素的第一个和最后一个位置](https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/)
+## 34. 在排序数组中查找元素的第一个和最后一个位置
 
 ### 题目
+
+题目链接：[34. 在排序数组中查找元素的第一个和最后一个位置](https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/)
 
 给定一个按照升序排列的整数数组 nums，和一个目标值 target。找出给定目标值在数组中的开始位置和结束位置。
 
@@ -226,9 +232,11 @@ private:
 
 
 
-## [69. x 的平方根 ](https://leetcode-cn.com/problems/sqrtx/)
+## 69. x 的平方根 
 
 ### 题目
+
+题目链接：[69. x 的平方根 ](https://leetcode-cn.com/problems/sqrtx/)
 
 给你一个非负整数 x ，计算并返回 x 的 算术平方根 。
 
@@ -340,9 +348,11 @@ public:
 
 此方法来自[牛顿迭代](https://leetcode-cn.com/problems/sqrtx/solution/niu-dun-die-dai-fa-by-loafer/)。
 
-## [367. 有效的完全平方数](https://leetcode-cn.com/problems/valid-perfect-square/)
+## 367. 有效的完全平方数
 
 ### 题目
+
+题目链接：[367. 有效的完全平方数](https://leetcode-cn.com/problems/valid-perfect-square/)
 
 给定一个 正整数 num ，编写一个函数，如果 num 是一个完全平方数，则返回 true ，否则返回 false 。
 

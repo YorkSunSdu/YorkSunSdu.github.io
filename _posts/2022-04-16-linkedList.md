@@ -7,11 +7,13 @@ tags: 算法
 
 博主对leetcode中的有关**链表**的题目作了总结。
 
-题目来源[leetcode](https://leetcode-cn.com/)，点击题目即可直达leetcode对应题目。
+题目来源[leetcode](https://leetcode-cn.com/)，点击题目链接即可直达leetcode对应题目。
 
-## [203. 移除链表元素](https://leetcode-cn.com/problems/remove-linked-list-elements/)
+## 203. 移除链表元素
 
 ### 题目
+
+题目链接：[203. 移除链表元素](https://leetcode-cn.com/problems/remove-linked-list-elements/)
 
 给你一个链表的头节点 head 和一个整数 val ，请你删除链表中所有满足 Node.val == val 的节点，并返回 **新的头节点** 。
 
@@ -87,9 +89,11 @@ public:
 
 
 
-## [707. 设计链表](https://leetcode-cn.com/problems/design-linked-list/)
+## 707. 设计链表
 
 ### 题目
+
+题目链接：[707. 设计链表](https://leetcode-cn.com/problems/design-linked-list/)
 
 设计链表的实现。您可以选择使用单链表或双链表。单链表中的节点应该具有两个属性：val 和 next。val 是当前节点的值，next 是指向下一个节点的指针/引用。如果要使用双向链表，则还需要一个属性 prev 以指示链表中的上一个节点。假设链表中的所有节点都是 0-index 的。
 
@@ -225,9 +229,11 @@ private:
 
 
 
-## [206. 反转链表](https://leetcode-cn.com/problems/reverse-linked-list/)
+## 206. 反转链表
 
 ### 题目
+
+题目链接：[206. 反转链表](https://leetcode-cn.com/problems/reverse-linked-list/)
 
 给你单链表的头节点 head ，请你反转链表，并返回反转后的链表。
 
@@ -294,9 +300,11 @@ public:
 
 
 
-## [24. 两两交换链表中的节点](https://leetcode-cn.com/problems/swap-nodes-in-pairs/)
+## 24. 两两交换链表中的节点
 
 ### 题目
+
+题目链接：[24. 两两交换链表中的节点](https://leetcode-cn.com/problems/swap-nodes-in-pairs/)
 
 给你一个链表，两两交换其中相邻的节点，并返回交换后链表的头节点。你必须在不修改节点内部的值的情况下完成本题（即，只能进行节点交换）。
 
@@ -379,9 +387,11 @@ public:
 
 
 
-## [19. 删除链表的倒数第 N 个结点](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/)
+## 19. 删除链表的倒数第 N 个结点
 
 ### 题目
+
+题目链接：[19. 删除链表的倒数第 N 个结点](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/)
 
 给你一个链表，删除链表的倒数第 n 个结点，并且返回链表的头结点。
 
@@ -524,9 +534,11 @@ ListNode* removeNthFromEnd(ListNode* head, int n) {
 
 
 
-## [面试题 02.07. 链表相交](https://leetcode-cn.com/problems/intersection-of-two-linked-lists-lcci/)
+## 面试题 02.07. 链表相交
 
 ### 题目
+
+题目链接：[面试题 02.07. 链表相交](https://leetcode-cn.com/problems/intersection-of-two-linked-lists-lcci/)
 
 给你两个单链表的头节点 headA 和 headB ，请你找出并返回两个单链表相交的起始节点。如果两个链表没有交点，返回 null 。
 
@@ -699,9 +711,11 @@ public:
 
 此方法来自[leetcode官方](https://leetcode-cn.com/problems/intersection-of-two-linked-lists-lcci/solution/lian-biao-xiang-jiao-by-leetcode-solutio-2kne/)。
 
-## [142. 环形链表 II](https://leetcode-cn.com/problems/linked-list-cycle-ii/)
+## 142. 环形链表 II
 
 ### 题目
+
+题目链接：[142. 环形链表 II](https://leetcode-cn.com/problems/linked-list-cycle-ii/)
 
 给定一个链表的头节点  head ，返回链表开始入环的第一个节点。 如果链表无环，则返回 null。
 
