@@ -198,7 +198,7 @@ code {
   vertical-align: bottom;
   word-wrap: break-word; }
 
-/* pre {
+pre {
   margin-bottom: 1.3em;
   padding: 1em 2.5%;
   background: #e8f2fb;
@@ -208,7 +208,7 @@ code {
   font-size: .9em;
   font-weight: normal;
   line-height: 1.3em;
-  overflow: scroll; } */
+  overflow: scroll; }
 pre code {
   padding: 0;
   background: none;
