@@ -187,7 +187,7 @@ ol {
 ul {
   list-style-type: disc; }
 
-code {
+/* code {
   color: #000000;
   padding: .1em .4em;
   background: #e8f2fb;
@@ -196,7 +196,7 @@ code {
   font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
   font-size: 1.0em;
   vertical-align: bottom;
-  word-wrap: break-word; }
+  word-wrap: break-word; } */
 
 pre {
   margin-bottom: 1.3em;
