@@ -187,7 +187,7 @@ ol {
 ul {
   list-style-type: disc; }
 
-/* code {
+code {
   color: #000000;
   padding: .1em .4em;
   background: #e8f2fb;
@@ -196,9 +196,9 @@ ul {
   font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
   font-size: 1.0em;
   vertical-align: bottom;
-  word-wrap: break-word; } */
+  word-wrap: break-word; }
 
-pre {
+/* pre {
   margin-bottom: 1.3em;
   padding: 1em 2.5%;
   background: #e8f2fb;
@@ -208,7 +208,7 @@ pre {
   font-size: .9em;
   font-weight: normal;
   line-height: 1.3em;
-  overflow: scroll; }
+  overflow: scroll; } */
 pre code {
   padding: 0;
   background: none;
