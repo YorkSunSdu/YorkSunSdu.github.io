@@ -52,5 +52,5 @@ email：leoparpan@icloud.com
 qq: 1499065178     
 <p> 
 
-{% include comments.html %}
+<!-- {% include comments.html %} -->
 
