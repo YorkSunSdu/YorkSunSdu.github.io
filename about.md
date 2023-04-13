@@ -7,11 +7,9 @@ title: 关于我
 
 平时会写博客，更新内容包括但不限于：
 
-1. 刷算法题所总结题目的算法思路（其中的代码一般都写了很多很多注释）；
+1. 刷算法题所总结题目的算法思路；
 2. 各种项目的技术报告与总结；
 3. 重要课程的笔记。
-
-所有的博客原文都可以在[YorkSunSdu.github.io](https://github.com/YorkSunSdu/YorkSunSdu.github.io)仓库的_posts目录下找到。
 
 所有的项目文件都可以在[YorkSunSdu](https://github.com/YorkSunSdu/YorkSunSdu)仓库的相关目录下找到。
 
