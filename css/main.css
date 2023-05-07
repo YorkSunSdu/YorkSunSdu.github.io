@@ -264,6 +264,7 @@ code {
   padding: 0 2px 0 2px;
   padding: 2px 4px 0px 4px;
   font-size: 1.1em; 
+  font-family: Consolas, 'Courier New', monospace;
 }
 
 /* 修改pre */
