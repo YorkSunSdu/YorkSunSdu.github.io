@@ -4,41 +4,6 @@
 */
 @import url(animate.css);
 @import url(tomorrow.css);
-
-/* 新增字体 */
-/* open-sans-regular - latin-ext_latin */
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Open Sans Regular'), local('OpenSans-Regular'), url('./github/open-sans-v17-latin-ext_latin-regular.woff2') format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD, U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* open-sans-italic - latin-ext_latin */
-@font-face {
-  font-family: 'Open Sans';
-  font-style: italic;
-  font-weight: normal;
-  src: local('Open Sans Italic'), local('OpenSans-Italic'), url('./github/open-sans-v17-latin-ext_latin-italic.woff2') format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD, U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* open-sans-700 - latin-ext_latin */
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: bold;
-  src: local('Open Sans Bold'), local('OpenSans-Bold'), url('./github/open-sans-v17-latin-ext_latin-700.woff2') format('woff2'); 
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD, U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* open-sans-700italic - latin-ext_latin */
-@font-face {
-  font-family: 'Open Sans';
-  font-style: italic;
-  font-weight: bold;
-  src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'), url('./github/open-sans-v17-latin-ext_latin-700italic.woff2') format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD, U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -47,20 +12,13 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   font: inherit;
   vertical-align: baseline; }
 
-/* 新增 */
-html {
-  font-size: 16px;
-}
-
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block; }
 
-
 body {
   line-height: 1; 
 }
-
 
 ol, ul {
   list-style: none; }
@@ -103,17 +61,11 @@ html {
   max-height: 100%; 
 }
 
-/* 修改body */
-/* body {
+body {
   font-family: "ff-tisa-web-pro-1", "ff-tisa-web-pro-2", "Lucida Grande", "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
   font-size: 14px;
   color: #333;
-  -webkit-font-smoothing: antialiased; } */
-  body {
-    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: rgb(51, 51, 51);
-    line-height: 1.6;
-  }
+  -webkit-font-smoothing: antialiased; }
 
 ::selection {
   background: #27408B; 
@@ -141,77 +93,57 @@ a:hover {
   -webkit-transition: .5s; 
 }
 
-/* 修改h */
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
-    position: relative;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    font-weight: bold;
-    line-height: 1.4;
-    cursor: text;
-}
-h1:hover a.anchor,
-h2:hover a.anchor,
-h3:hover a.anchor,
-h4:hover a.anchor,
-h5:hover a.anchor,
-h6:hover a.anchor {
-    text-decoration: none;
-}
-h1 tt,
-h1 code {
-    font-size: inherit;
-}
-h2 tt,
-h2 code {
-    font-size: inherit;
-}
-h3 tt,
-h3 code {
-    font-size: inherit;
-}
-h4 tt,
-h4 code {
-    font-size: inherit;
-}
-h5 tt,
-h5 code {
-    font-size: inherit;
-}
-h6 tt,
-h6 code {
-    font-size: inherit;
-}
-h1 {
-    padding-bottom: .3em;
-    font-size: 2.25em;
-    line-height: 1.2;
-    border-bottom: 1px solid #eee;
-}
-h2 {
-   padding-bottom: .3em;
-    font-size: 1.75em;
-    line-height: 1.225;
-    border-bottom: 1px solid #eee;
-}
-h3 {
-    font-size: 1.5em;
-    line-height: 1.43;
-}
-h4 {
-    font-size: 1.25em;
-}
 h5 {
-    font-size: 1em;
+  margin-top: 1.0em;
+  margin-bottom: .5em;
+  font-family: "ff-tisa-web-pro-1", "ff-tisa-web-pro-2", "Lucida Grande", "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  font-weight: lighter;
+  color: #333333;
+  -webkit-font-smoothing: antialiased; }
+
+h1 {
+  margin-top: 0;
+  font-size: 2.0em;
+  line-height: 1.2em;
+  letter-spacing: .05em; 
+  font-weight: bold;
 }
-h6 {
-   font-size: 1em;
-    color: #777;
+
+h2 {
+  font-size: 1.5em; 
+  font-weight: bold;
+  /*background:#B9D3EE;*/
+  /*text-align: center;*/
+}
+
+h3 {
+  font-size: 1.2em; 
+  text-indent: 4px; 
+  border-radius: 4px; 
+  padding: 6px 15px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  background:#B9D3EE;
+  /*0px right, 5px botton, 5px fuzzy*/
+  box-shadow: 0px 5px 5px #9FB6CD;
+  border-left: 6px solid #1874CD; 
+  position:relative;
+}
+
+h4 {
+  font-size: 1.2em; 
+  padding: 6px 15px;
+  font-weight: bold;
+}
+
+h5 {
+  font-size: 1em; 
+  font-weight: bold;
 }
 
 p {
@@ -255,15 +187,16 @@ ol {
 ul {
   list-style-type: disc; }
 
-/* 修改code */
 code {
-  border: 1px solid #e7eaed;
-  background-color: #f3f4f4;
+  color: #000000;
+  padding: .1em .4em;
+  background: #e8f2fb;
+  border: 1px solid #c9e1f6;
   border-radius: 3px;
-  padding: 0 2px 0 2px;
-  padding: 2px 4px 0px 4px;
-  font-size: 0.9em; 
-}
+  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+  font-size: 1.0em;
+  vertical-align: bottom;
+  word-wrap: break-word; }
 
 pre {
   margin-bottom: 1.3em;
