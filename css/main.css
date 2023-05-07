@@ -263,7 +263,7 @@ code {
   border-radius: 3px;
   padding: 0 2px 0 2px;
   padding: 2px 4px 0px 4px;
-  font-size: 0.9em; 
+  font-size: 5em; 
 }
 
 /* 修改pre */
@@ -289,7 +289,7 @@ pre {
 }
 
 pre code {
-  padding: 0;
+  padding: 0 2px 0 2px;
   background: none;
   border: none;
   word-wrap: normal; }
