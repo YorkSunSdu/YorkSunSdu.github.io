@@ -5,6 +5,7 @@
   color: #AA5500;
 }
 
+/* 修改 */
 /* Tomorrow Red */
 .hljs-variable,
 .hljs-attribute,
@@ -18,7 +19,7 @@
 .css .hljs-id,
 .css .hljs-class,
 .css .hljs-pseudo {
-  color: #c82829;
+  color: #000000;
 }
 
 /* Tomorrow Orange */
@@ -33,10 +34,11 @@
   color: #000000;
 }
 
+/* 修改 */
 /* Tomorrow Yellow */
 .ruby .hljs-class .hljs-title,
 .css .hljs-rules .hljs-attribute {
-  color: #eab700;
+  color: #0000FF;
 }
 
 /* Tomorrow Green */
