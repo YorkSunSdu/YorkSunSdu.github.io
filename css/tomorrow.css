@@ -22,6 +22,7 @@
 }
 
 /* Tomorrow Orange */
+/* 修改 */
 .hljs-number,
 .hljs-preprocessor,
 .hljs-pragma,
@@ -29,7 +30,7 @@
 .hljs-literal,
 .hljs-params,
 .hljs-constant {
-  color: #f5871f;
+  color: #000000;
 }
 
 /* Tomorrow Yellow */
@@ -67,16 +68,18 @@
 }
 
 /* Tomorrow Purple */
+/* 修改 */
 .hljs-keyword,
 .javascript .hljs-function {
-  color: #8959a8;
+  color: #770088;
 }
 
+/* 修改 */
 .hljs {
   display: block;
   overflow-x: auto;
   /*background: white;*/
-  color: #4d4d4c;
+  color: #000000;
   padding: 0.5em;
   -webkit-text-size-adjust: none;
 }
