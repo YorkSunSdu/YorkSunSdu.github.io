@@ -265,7 +265,8 @@ code {
   font-size: 0.9em; 
 }
 
-pre {
+/* 修改pre */
+/* pre {
   margin-bottom: 1.3em;
   padding: 1em 2.5%;
   background: #e8f2fb;
@@ -275,7 +276,17 @@ pre {
   font-size: .9em;
   font-weight: normal;
   line-height: 1.3em;
-  overflow: scroll; }
+  overflow: scroll; } */
+
+pre {
+  border: 1px solid #e7eaed;
+  background-color: #f3f4f4;
+  border-radius: 3px;
+  padding: 0 2px 0 2px;
+  padding: 2px 4px 0px 4px;
+  font-size: 0.9em; 
+}
+
 pre code {
   padding: 0;
   background: none;
